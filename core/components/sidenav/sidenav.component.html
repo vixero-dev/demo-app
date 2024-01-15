@@ -1,0 +1,27 @@
+<div class="d-flex flex-column flex-shrink-0 p-3 text-white bg-dark">
+  <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-white text-decoration-none">
+    <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap" /></svg>
+    <span class="fs-4">Admin</span>
+  </a>
+  <hr />
+  <ul ngbNav #nav="ngbNav" activeId="work-areas" class="nav-pills mb-auto" orientation="vertical">
+    <li ngbNavItem="work-areas">
+      <a ngbNavLink routerLink="static-data/work-areas" class="text-white" aria-current="page">
+        <fa-icon [icon]="faDatabase" size="lg"></fa-icon>
+        <span class="ms-2">Work areas</span>
+      </a>
+    </li>
+    <li ngbNavItem="sexual-activities">
+      <a ngbNavLink routerLink="static-data/sexual-activities" class="text-white" aria-current="page">
+        <fa-icon [icon]="faDatabase" size="lg"></fa-icon>
+        <span class="ms-2">Sexual activities</span>
+      </a>
+    </li>
+    <li ngbNavItem="agencies">
+      <a ngbNavLink routerLink="agencies" class="text-white" aria-current="page">
+        <fa-icon [icon]="faDatabase" size="lg"></fa-icon>
+        <span class="ms-2">Agencies</span>
+      </a>
+    </li>
+  </ul>
+</div>
